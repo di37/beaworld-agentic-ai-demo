@@ -1,0 +1,15 @@
+SUPPLY FAN (FICTIONAL TRAINING MANUAL)
+
+The supply fan pushes conditioned air into the ductwork. Low supply airflow
+with NORMAL filter pressure often points to the fan rather than the filter.
+
+Common causes: a worn or slipping drive belt, a fan running slower than
+commanded, or a supply damper stuck partly closed.
+
+Belt inspection interval: every 6 months.
+
+Inspection steps for an engineer:
+1. Isolate the unit using the site lockout procedure.
+2. Check belt tension, wear and alignment.
+3. Compare the commanded fan speed with the measured fan speed.
+4. Listen for bearing noise and check that the supply damper opens fully.

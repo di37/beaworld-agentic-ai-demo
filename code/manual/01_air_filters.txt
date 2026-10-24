@@ -1,0 +1,14 @@
+AIR FILTERS (FICTIONAL TRAINING MANUAL)
+
+A dirty or clogged air filter restricts the air passing through the unit.
+Typical symptoms: high filter differential pressure, low supply airflow, and
+rooms that stay warmer than the setpoint even though the cooling coil is working.
+
+Replacement interval: every 3 months, or sooner if the filter differential
+pressure is HIGH.
+
+Inspection steps for an engineer:
+1. Isolate the unit using the site lockout procedure before opening any panel.
+2. Check the filter bank for heavy dust loading, damage, or gaps where air bypasses the filter.
+3. Compare the filter differential pressure with the clean-filter value on the unit label.
+4. Replace the filter only with the grade specified for this unit.

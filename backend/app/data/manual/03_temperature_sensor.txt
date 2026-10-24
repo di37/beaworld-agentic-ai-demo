@@ -1,0 +1,15 @@
+ROOM TEMPERATURE SENSOR (FICTIONAL TRAINING MANUAL)
+
+A faulty or badly placed sensor can report a temperature that does not match
+the room. The control system then cools too much or too little.
+
+Warning signs: occupant complaints that do not match the reported value,
+sudden jumps in the reading, or a sensor mounted near a window, a heat source,
+or in direct sunlight.
+
+Calibration interval: every 12 months.
+
+Inspection steps for an engineer:
+1. Measure the room with a calibrated handheld thermometer.
+2. Compare the handheld value with the sensor reading.
+3. Check the sensor location and wiring before replacing it.

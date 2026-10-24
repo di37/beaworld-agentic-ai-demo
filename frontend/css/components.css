@@ -1,0 +1,347 @@
+/* Shared components: cards, badges, status, prose, chips, room question, toggle. */
+
+/* Card */
+.card {
+  padding: 1.35rem 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.card__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.9rem;
+  color: var(--green);
+}
+
+.card__header h3 {
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.card__hint {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: var(--slate);
+}
+
+.model-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: var(--mint-soft);
+  color: var(--slate-strong);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.model-badge::before {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--slate);
+}
+
+.model-badge[data-state="ready"]::before {
+  background: #2fa36b;
+}
+
+.model-badge[data-state="missing"] {
+  background: var(--red-tint);
+  color: var(--red-strong);
+}
+
+.model-badge[data-state="missing"]::before {
+  background: var(--red);
+}
+
+/* Ingredients and "who decides" */
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ingredient {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px dashed var(--line);
+  border-radius: 999px;
+  color: #9aa5ad;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.ingredient.is-on {
+  border-style: solid;
+  border-color: var(--green);
+  background: var(--green-tint);
+  color: var(--green-strong);
+}
+
+.decides {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  border-left: 3px solid var(--green);
+}
+
+.decides__label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+/* Status line */
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius-small);
+  background: var(--mint-soft);
+  color: var(--slate-strong);
+  font-weight: 500;
+}
+
+.status .icon {
+  display: none;
+}
+
+.status__spinner {
+  width: 1.05rem;
+  height: 1.05rem;
+  border: 2.5px solid var(--mint);
+  border-top-color: var(--green);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.status[data-state="error"] {
+  background: var(--red-tint);
+  color: var(--red-strong);
+}
+
+.status[data-state="waiting"] {
+  background: var(--amber-tint);
+  color: var(--amber);
+}
+
+.status[data-state="error"] .status__spinner,
+.status[data-state="waiting"] .status__spinner {
+  display: none;
+}
+
+.status[data-state="error"] .icon,
+.status[data-state="waiting"] .icon {
+  display: block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Streaming / Markdown text */
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.prose ul,
+.prose ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.prose li > ul,
+.prose li > ol {
+  margin-top: 0.35rem;
+}
+
+.prose h4 {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+.prose hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+.prose code {
+  padding: 0.05em 0.35em;
+  border-radius: 5px;
+  background: var(--mint-soft);
+}
+
+.prose.is-streaming {
+  display: block;
+  white-space: pre-wrap;
+}
+
+.prose.is-streaming::after {
+  content: "";
+  display: inline-block;
+  width: 0.55em;
+  height: 1.1em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: var(--green);
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.answer {
+  border-top: 4px solid var(--green);
+}
+
+/* Chips */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.chips__label {
+  font-size: 0.85rem;
+  color: var(--slate);
+}
+
+.chip {
+  padding: 0.38rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--mint-soft);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.chip:hover:not(:disabled) {
+  border-color: var(--green);
+  background: var(--green-tint);
+}
+
+.chip:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Question for the room */
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 1.2rem 1.4rem;
+  border: 2px dashed var(--green);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.room__question {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.room__answer {
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-small);
+  background: var(--green-tint);
+  color: var(--green-strong);
+  font-weight: 500;
+}
+
+/* Toggle switch */
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+.toggle__input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.toggle__track {
+  position: relative;
+  flex: none;
+  width: 3rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  background: var(--line);
+  transition: background-color 0.15s ease;
+}
+
+.toggle__track::after {
+  content: "";
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s ease;
+}
+
+.toggle__input:checked + .toggle__track {
+  background: var(--green);
+}
+
+.toggle__input:checked + .toggle__track::after {
+  transform: translateX(1.3rem);
+}
+
+.toggle__input:focus-visible + .toggle__track {
+  outline: 3px solid var(--green);
+  outline-offset: 2px;
+}
+
+/* Start-up problem */
+.startup-error {
+  max-width: 44rem;
+}
+
+.startup-error h2 {
+  margin-bottom: 0.6rem;
+}
+
+.startup-error code {
+  padding: 0.1em 0.4em;
+  border-radius: 5px;
+  background: var(--mint-soft);
+}

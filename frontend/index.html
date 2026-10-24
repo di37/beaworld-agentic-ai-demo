@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'"
+    />
+    <title>Agentic Engineering 101</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/levels.css" />
+    <link rel="stylesheet" href="css/chat.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <p class="brand__org">BEAWorld</p>
+          <h1 class="brand__title">Agentic Engineering 101</h1>
+          <p class="brand__tagline">From LLM to working AI agent</p>
+        </div>
+        <nav class="journey" id="level-nav" aria-label="Workshop levels"></nav>
+        <p class="sidebar__note">
+          All readings, manuals and tickets are fictional. Nothing here controls real equipment.
+        </p>
+        <p class="sidebar__keys">Tip: use ← and → (or 1–5) to change level.</p>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="case">
+            <span class="case__unit">AHU-01</span>
+            <p class="case__quote">“The office is still warm. Can you investigate?”</p>
+            <span class="case__target">Target 22 °C</span>
+          </div>
+          <p class="model-badge" id="model-badge" role="status">Connecting…</p>
+        </header>
+        <div class="stage" id="stage"></div>
+      </main>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

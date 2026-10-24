@@ -1,0 +1,33 @@
+/* Design tokens taken from the BEAWorld workshop deck. */
+:root {
+  --navy: #1a243a;
+  --navy-soft: #26324d;
+  --navy-line: rgba(255, 255, 255, 0.14);
+  --green: #2b6450;
+  --green-strong: #1f4c3c;
+  --green-tint: #d9f1e6;
+  --mint: #dde6e1;
+  --mint-soft: #eef3f0;
+  --paper: #f3f5f3;
+  --white: #ffffff;
+  --slate: #63717d;
+  --slate-strong: #526177;
+  --ink: #1a243a;
+  --red: #e04149;
+  --red-strong: #b8323a;
+  --red-tint: #fce9ea;
+  --amber: #8f5a0c;
+  --amber-tint: #fdf2dc;
+  --amber-line: #efc678;
+  --line: #d6dfda;
+
+  --radius: 14px;
+  --radius-small: 9px;
+  --shadow: 0 1px 2px rgba(26, 36, 58, 0.06), 0 8px 24px rgba(26, 36, 58, 0.06);
+
+  --font: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --sidebar-width: 300px;
+  --gutter: 40px;
+}

@@ -1,0 +1,15 @@
+COOLING COIL (FICTIONAL TRAINING MANUAL)
+
+The cooling coil removes heat from the air. A dirty coil, or too little
+chilled water flowing through it, reduces cooling capacity.
+
+Typical symptoms: supply air warmer than design with NORMAL airflow, and only
+a small temperature difference between chilled water entering and leaving the coil.
+
+Cleaning interval: every 12 months.
+
+Inspection steps for an engineer:
+1. Isolate the unit using the site lockout procedure.
+2. Check the coil face for dirt and blocked fins.
+3. Confirm the chilled-water valve opens as commanded.
+4. Check the chilled-water supply temperature against design.
