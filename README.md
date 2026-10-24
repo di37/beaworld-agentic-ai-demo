@@ -12,8 +12,7 @@ Every level uses the same case study: **AHU-01**, an office Air Handling Unit th
 |---|---|---|
 | **Browser demo** | [`backend/`](backend) + [`frontend/`](frontend) | The live demo for a non-technical audience. Every step is shown on screen. |
 | **Python exercises** | [`code/`](code) | Five short scripts, one per level, for participants who want to read and run the code. |
-| **Slides** | `BEAWorld_Agentic_Engineering_101_GUI_Demo.pptx` | The deck, with the exercise slides showing the browser demo. |
-| | `BEAWorld_Agentic_Engineering_101_FINAL.pptx` | The earlier deck, with code on the exercise slides. |
+| **Slides** | `BEAWorld_Agentic_Engineering_101_GUI_Demo.pptx` | The workshop deck; its exercise slides show the browser demo. |
 
 ## The five levels
 
@@ -115,7 +114,7 @@ beaworld-agentic-ai-demo/
 │   └── js/               api/ · ui/ · ui/components/ · levels/
 ├── code/                 command-line exercises 1–5 and their shared tools
 ├── docs/images/          screenshots used in this README
-└── *.pptx                workshop slides
+└── BEAWorld_Agentic_Engineering_101_GUI_Demo.pptx   workshop slides
 ```
 
 ## Troubleshooting

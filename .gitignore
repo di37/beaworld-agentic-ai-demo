@@ -16,3 +16,6 @@ __pycache__/
 
 # Local tooling
 .claude/
+
+# Earlier slide deck, kept locally only
+BEAWorld_Agentic_Engineering_101_FINAL.pptx
