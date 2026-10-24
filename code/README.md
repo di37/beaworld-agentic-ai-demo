@@ -1,12 +1,12 @@
 # BEAWorld — Agentic Engineering 101: Python Workshop
 
 **Presenter:** Isham Rashik — AI Engineer, Future OS, Expo City, Dubai, UAE  
-**Audience:** Engineers and architects without a computer-science background  
+**Audience:** Engineers and architects  
 **Case study:** A **fictional Air Handling Unit (AHU-01)** that is not cooling properly.
 
-The five exercises correspond directly to the **five levels in the final 29-slide PowerPoint**.
+The five exercises correspond directly to the **five levels in the workshop slides**.
 
-> For a non-technical audience, use the browser version of the same five levels instead: see [../README.md](../README.md).
+> For the live session, use the browser version of the same five levels: see [../README.md](../README.md).
 
 | PowerPoint | Script | What it demonstrates | Time |
 |---|---|---|---|

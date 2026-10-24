@@ -1,6 +1,6 @@
 # BEAWorld · Agentic Engineering 101
 
-A hands-on workshop that goes from a plain **LLM** to a governed **agentic AI application**, in five levels, for engineers and architects without a computer-science background.
+A hands-on workshop for engineers and architects that goes from a plain **LLM** to a governed **agentic AI application**, in five levels.
 
 Every level uses the same case study: **AHU-01**, an office Air Handling Unit that isn't cooling properly. All readings, manuals and tickets are fictional, and nothing connects to real equipment.
 
@@ -10,7 +10,7 @@ Every level uses the same case study: **AHU-01**, an office Air Handling Unit th
 
 | Part | Folder | Use it for |
 |---|---|---|
-| **Browser demo** | [`backend/`](backend) + [`frontend/`](frontend) | The live demo for a non-technical audience. Every step is shown on screen. |
+| **Browser demo** | [`backend/`](backend) + [`frontend/`](frontend) | The live demo. Every step is shown on screen. |
 | **Python exercises** | [`code/`](code) | Five short scripts, one per level, for participants who want to read and run the code. |
 | **Slides** | `BEAWorld_Agentic_Engineering_101_GUI_Demo.pptx` | The workshop deck; its exercise slides show the browser demo. |
 

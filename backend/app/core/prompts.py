@@ -7,7 +7,7 @@ GUI all tell the same story.
 from __future__ import annotations
 
 CONCISE_STYLE = (
-    "Write for an audience of engineers without a computer-science background. "
+    "Write for practising engineers and architects. "
     "Keep answers short and in plain English: at most about 150 words, "
     "using short bullet points where helpful."
 )
